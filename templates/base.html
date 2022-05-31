@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        {% block link %}
+
+        {% endblock %}
+
+
+        {% block title -%}
+            {% if title %}
+                <title>{{ title }}</title>
+            {% else %}
+                <title>Заголовок не задан</title>
+            {% endif %}
+        {% endblock %}
+    </head>
+
+
+    <body>
+
+        {% block content %}
+
+        {% endblock %}
+
+    </body>
+
+</html>
